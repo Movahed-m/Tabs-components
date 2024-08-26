@@ -1,0 +1,35 @@
+nav {
+  width: 100%;
+}
+
+.list_container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.list_item {
+  margin: 10px 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.list_item_selected {
+    color: #ffd900;
+    border-bottom: 2px solid #ffd900;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 140px);
+  background: #0026ff;
+  position: absolute;
+  top: 140px;
+}
+
+.main_container {
+    max-width: 1200px;
+    padding: 30px 20px 20px 20px;
+}
