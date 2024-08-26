@@ -34,7 +34,12 @@ function NavAndMain() {
       <nav>
         <ul className={styles.list_container}>
           {data.map((item) => (
-            <li key={item.id} onClick={changeHandler} accessKey={item.id} className={styles.list_item}>
+            <li
+              key={item.id}
+              onClick={changeHandler}
+              accessKey={item.id}
+              className={styles.list_item}
+            >
               {item.tabTitle}
             </li>
           ))}
@@ -42,10 +47,10 @@ function NavAndMain() {
       </nav>
       <main>
         <div className={styles.main_container}>
-          {activeTab === 1 ? <Content title={"Content1"} /> : null}
-          {activeTab === 2 ? <Content title={"Content2"} /> : null}
-          {activeTab === 3 ? <Content title={"Content3"} /> : null}
-          {activeTab === 4 ? <Content title={"Content4"} /> : null}
+          {activeTab === 1 && <Content title={"Content1"} />}
+          {activeTab === 2 && <Content title={"Content2"} />}
+          {activeTab === 3 && <Content title={"Content3"} />}
+          {activeTab === 4 && <Content title={"Content4"} />}
         </div>
       </main>
     </>
