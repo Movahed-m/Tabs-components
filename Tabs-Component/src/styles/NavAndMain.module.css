@@ -17,6 +17,10 @@ nav {
 }
 
 .list_item_selected {
+  margin: 10px 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
   color: #ffd900;
   border-bottom: 2px solid #ffd900;
 }
@@ -41,7 +45,7 @@ main {
     padding-left: 10px;
   }
 
-  .list_item {
+  .list_item , .list_item_selected {
     margin: 5px;
     font-size: 1rem;
   }

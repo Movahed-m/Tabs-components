@@ -38,7 +38,7 @@ function NavAndMain() {
               key={item.id}
               onClick={changeHandler}
               accessKey={item.id}
-              className={styles.list_item}
+              className={activeTab === item.id ? styles.list_item_selected : styles.list_item}
             >
               {item.tabTitle}
             </li>
