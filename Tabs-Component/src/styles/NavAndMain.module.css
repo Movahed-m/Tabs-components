@@ -17,19 +17,41 @@ nav {
 }
 
 .list_item_selected {
-    color: #ffd900;
-    border-bottom: 2px solid #ffd900;
+  color: #ffd900;
+  border-bottom: 2px solid #ffd900;
 }
 
 main {
-  width: 100%;
+  width: 100vw;
   height: calc(100vh - 140px);
   background: #0026ff;
   position: absolute;
   top: 140px;
+  left: 0;
 }
 
 .main_container {
-    max-width: 1200px;
-    padding: 30px 20px 20px 20px;
+  max-width: 1200px;
+  padding: 30px 20px 20px 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 456px) {
+  .list_container {
+    padding-left: 10px;
+  }
+
+  .list_item {
+    margin: 5px;
+    font-size: 1rem;
+  }
+
+  main {
+    height: calc(100vh - 105px);
+    top: 105px;
+  }
+
+  .main_container {
+    padding: 20px 15px;
+  }
 }
