@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Content from "./Content";
 
-function Navigation() {
+function NavAndMain() {
   const [activeTab, setActiveTab] = useState(1);
   const data = [
     {
@@ -53,4 +53,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default NavAndMain;

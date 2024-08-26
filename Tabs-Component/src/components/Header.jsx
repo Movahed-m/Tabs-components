@@ -1,11 +1,11 @@
-import Navigation from "./Navigation";
+import NavAndMain from "./NavAndMain";
 
 function Header() {
   return (
     <header>
       <div className="header-container">
         <h1 className="header-title">Tabs Component with React</h1>
-        <Navigation />
+        <NavAndMain />
       </div>
     </header>
   );
